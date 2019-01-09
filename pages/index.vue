@@ -1,39 +1,31 @@
 <template>
-  <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        raffaelepizzari.com
-      </h1>
-      <h2 class="subtitle">
-        My personal website
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-    </div>
-  </section>
+  <div class="c-main-container js-main-container">
+    <section-header />
+  </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import SectionHeader from '~/components/SectionHeader.vue'
 
 export default {
+  head () {
+    return {
+      script: [
+        { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js' }
+      ],
+      link: [
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext' },
+        { rel: 'stylesheet', href: 'https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css' }
+      ]
+    }
+  },
   components: {
-    Logo
+    SectionHeader,
   }
 }
 </script>
 
 <style>
-
 .container {
   min-height: 100vh;
   display: flex;
