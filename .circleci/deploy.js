@@ -95,7 +95,7 @@ ftpClient.on('ready', () => {
   // directory is created on the server or the
   // file is uploaded.
   glob.sync(`${basePath}/**/*`).forEach(handlePath);
-  cleanupRemoteDirectory(destinationPath);
+  //cleanupRemoteDirectory(destinationPath);
 });
 
 ftpClient.connect(config);
