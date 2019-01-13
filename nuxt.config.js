@@ -82,7 +82,12 @@ module.exports = {
     // Options
     }],
     '@nuxtjs/pwa',
+    ['@nuxtjs/component-cache', {
+      max: 31536000,
+      maxAge: 31536000
+    }],
     '@nuxtjs/sitemap',
+
   ],
 
   /*
