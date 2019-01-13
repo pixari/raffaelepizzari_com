@@ -4,7 +4,7 @@ const FtpClient = require('ftp');
 const glob = require('glob');
 
 const basePath = './dist';
-const destinationPath = '/public';
+const destinationPath = '/httpdocs';
 const config = {
   // We store the credentials for
   // our FTP server as environemnt
