@@ -19,7 +19,6 @@ module.exports = {
       href: '/favicon.ico'
     }]
   },
-
   /*
   ** Customize the progress-bar color
   */
