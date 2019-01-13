@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "cross-env": "^5.2.0",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "nuxt-i18n": "^5.4.4"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

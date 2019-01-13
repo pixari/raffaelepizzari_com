@@ -43,6 +43,36 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    ['nuxt-i18n', {
+      detectBrowserLanguage: {
+        useCookie: false,
+      },
+      baseUrl: 'http://raffaelepizzari.com',
+      locales: [
+        {
+          code: 'en',
+          iso: 'en-US',
+          file: 'en-US.js',
+          name: 'English',
+        },
+        {
+          code: 'de',
+          iso: 'de-DE',
+          file: 'de-DE.js',
+          name: 'German',
+        },
+        {
+          code: 'it',
+          iso: 'it-IT',
+          file: 'it-IT.js',
+          name: 'Italiano',
+        },
+      ],
+      lazy: true,
+      langDir: 'lang/',
+      defaultLocale: 'en',
+    // Options
+    }]
   ],
 
   /*

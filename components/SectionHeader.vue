@@ -15,7 +15,7 @@
                 <div class="a-header  c-avatar">
                   <img
                     class="c-avatar__img"
-                    src="assets/images/header/avatar.jpg"
+                    src="~/assets/images/header/raffaele_pizzari_frontend_developer.jpg"
                     alt=""
                   >
                 </div><!-- /c-avatar -->
@@ -35,16 +35,16 @@
                     <h1 class="c-brand__title  t-title">
                       <span class="c-brand__sizer">
                         <span class="a-header  c-brand__first-word  t-title__first-word">
-                          Raffaele
+                          {{ me.firstname }}
                         </span>
                         <span class="a-header  c-brand__second-word  t-title__second-word">
-                          Pizzari
+                          {{ me.lastname }}
                         </span>
                       </span>
                     </h1>
                     <h2 class="a-header  c-brand__sub-title  t-sub-title">
                       <span class="c-brand__sizer">
-                        Front-End Developer based in Munich, Germany
+                        {{ $t('Front-End Developer based in Munich, Germany') }} 
                       </span>
                     </h2>
                   </div><!-- /c-brand -->
@@ -58,7 +58,7 @@
                       target="_blank"
                       class="c-social-button t-social-button"
                     >
-                      <i class="fa fa-lg fa-layers-text" />
+                      <i class="fa fa-lg fa-facebook" />
                     </a>
                   </li>
                   <li class="a-header">
@@ -67,6 +67,22 @@
                       target="_blank"
                       class="c-social-button t-social-button">
                       <i class="fa  fa-lg  fa-twitter" />
+                    </a>
+                  </li>
+                  <li class="a-header">
+                    <a
+                      href="https://github.com/pixari"
+                      target="_blank"
+                      class="c-social-button t-social-button">
+                      <i class="fa fa-lg fa-github" />
+                    </a>
+                  </li>
+                  <li class="a-header">
+                    <a
+                      href="mailto:raffaele.pizzari@gmail.com"
+                      target="_blank"
+                      class="c-social-button t-social-button">
+                      <i class="fa fa-lg fa-envelope" />
                     </a>
                   </li>
                 </ul><!-- /c-header__social-buttons -->
@@ -84,9 +100,9 @@
                   <div class="o-grid__col-md-3  o-grid__col-sm-6">
                     <div class="a-header  o-content">
                       <div class="o-content__body">
-                        <h4>Location</h4>
+                        <h4>{{ $t('Location') }}</h4>
                         <address>
-                          Munich, DE
+                          {{ $t(me.location) }}
                         </address>
                       </div>
                     </div><!-- /o-content -->
@@ -95,9 +111,9 @@
                   <div class="o-grid__col-md-3  o-grid__col-sm-6">
                     <div class="a-header  o-content">
                       <div class="o-content__body">
-                        <h4>Phone</h4>
+                        <h4>{{ $t('Phone') }}</h4>
                         <p>
-                          534.456.886
+                          {{ me.mobile }}
                         </p>
                       </div>
                     </div><!-- /o-content -->
@@ -111,10 +127,10 @@
                           target="_blank"
                           class="t-link-container"
                         >
-                          <h4>Web</h4>
+                          <h4>{{ $t('Web') }}</h4>
                           <p>
                             <span class="t-link-container__item--blended">
-                              raffaelepizzari.com
+                              {{ me.web }}
                             </span>
                           </p>
                         </a><!-- /o-link-container -->
@@ -130,10 +146,10 @@
                           target="_blank"
                           class="t-link-container"
                         >
-                          <h4>Email</h4>
+                          <h4>{{ $t('Email') }}</h4>
                           <p>
                             <span class="t-link-container__item--blended">
-                              raffaele.pizzari@gmail.com
+                              {{ me.email }}
                             </span>
                           </p>
                         </a><!-- /o-link-container -->
@@ -154,3 +170,20 @@
     </div><!-- /c-header -->
   </section><!-- /o-section -->
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      me: {
+        firstname: 'Raffaele',
+        lastname: 'Pizzari',
+        mobile: '+49 174 9605816',
+        email: 'raffaele.pizzari@gmail.com',
+        location: 'Munich, DE',
+        web: 'raffaelepizzari.com',
+      },
+    }
+  },
+}
+</script>

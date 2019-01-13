@@ -1,11 +1,23 @@
 <template>
   <div class="c-main-container js-main-container">
     <section-header />
+    <section-intro />
+    <section-expertise />
+    <section-skills />
+    <section-experience />
+    <section-education />
+    <section-contact />
   </div>
 </template>
 
 <script>
-import SectionHeader from '~/components/SectionHeader.vue'
+import SectionHeader from '~/components/SectionHeader.vue';
+import SectionIntro from '~/components/SectionIntro.vue';
+import SectionExpertise from '~/components/SectionExpertise.vue';
+import SectionSkills from '~/components/SectionSkills.vue';
+import SectionExperience from '~/components/SectionExperience.vue';
+import SectionContact from '~/components/SectionContact.vue';
+import SectionEducation from '~/components/SectionEducation.vue';
 
 export default {
   head () {
@@ -21,6 +33,12 @@ export default {
   },
   components: {
     SectionHeader,
+    SectionIntro,
+    SectionExpertise,
+    SectionSkills,
+    SectionExperience,
+    SectionContact,
+    SectionEducation,
   }
 }
 </script>
