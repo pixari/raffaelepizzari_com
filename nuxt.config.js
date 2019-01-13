@@ -42,11 +42,9 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    ['nuxt-i18n', {
-      detectBrowserLanguage: {
-        useCookie: false,
-      },
-      baseUrl: 'http://raffaelepizzari.com',
+    ['nuxt-i18n', { 
+      detectBrowserLanguage: false,
+      baseUrl: '/',
       locales: [
         {
           code: 'en',
