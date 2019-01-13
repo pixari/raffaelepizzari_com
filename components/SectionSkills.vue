@@ -65,36 +65,60 @@ export default {
     return {
       skills: [
         { 
-          perc: '77',
+          perc: '90',
           name: this.$t('JavaScript'),
         },
         { 
-          perc: '32',
+          perc: '80',
           name: this.$t('CSS'),
         },
         { 
-          perc: '44',
+          perc: '75',
           name: this.$t('Vue.js'),
         },
         { 
-          perc: '44',
+          perc: '85',
           name: this.$t('Node.js'),
         },
         { 
-          perc: '55',
+          perc: '70',
           name: this.$t('Webpack'),
         },
         { 
-          perc: '55',
+          perc: '40',
           name: this.$t('Typescript'),
         },
         { 
-          perc: '55',
+          perc: '80',
           name: this.$t('NPM'),
         },
         { 
-          perc: '55',
+          perc: '70',
           name: this.$t('AngularJs'),
+        },
+        { 
+          perc: '75',
+          name: this.$t('PHP'),
+        },
+        { 
+          perc: '75',
+          name: this.$t('PHP'),
+        },
+        { 
+          perc: '70',
+          name: this.$t('Bootstrap'),
+        },
+        { 
+          perc: '70',
+          name: this.$t('SASS'),
+        },
+        { 
+          perc: '65',
+          name: this.$t('Stylus'),
+        },
+        { 
+          perc: '68',
+          name: this.$t('Bower'),
         },
       ],
     }

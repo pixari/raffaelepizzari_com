@@ -11,13 +11,24 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: pkg.description },
+      { 'http-equiv': 'cache-control', content: 'max-age=43200' },
     ],
     link: [{
       rel: 'icon',
       type: 'image/x-icon',
       href: '/favicon.ico'
     }]
+  },
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'http://raffaelepizzari.com',
+    cacheTime: 1000 * 60 * 15,
+    gzip: true,
+    generate: false, // Enable me when using nuxt generate
+    routes: [
+      '/',
+    ]
   },
   /*
   ** Customize the progress-bar color
@@ -69,7 +80,9 @@ module.exports = {
       langDir: 'lang/',
       defaultLocale: 'en',
     // Options
-    }]
+    }],
+    '@nuxtjs/pwa',
+    '@nuxtjs/sitemap',
   ],
 
   /*

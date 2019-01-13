@@ -13,6 +13,8 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/pwa": "^2.6.0",
+    "@nuxtjs/sitemap": "^0.2.0",
     "cross-env": "^5.2.0",
     "ftp-deploy": "^2.3.0",
     "jsftp": "^2.1.3",
