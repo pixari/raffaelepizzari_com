@@ -214,6 +214,6 @@ a .fa,
 }
 
 .c-work__timeframe, .c-work__location {
-  color: #333;
+  color: #000 !important;
 }
 /*# sourceMappingURL=themes.light.css.map */
