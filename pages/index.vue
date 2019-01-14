@@ -22,6 +22,10 @@ import SectionEducation from '~/components/SectionEducation.vue';
 export default {
   head () {
     return {
+      title: this.$t('Raffaele Pizzari - Front-End Developer in Munich'),
+      meta: [
+        { hid: 'description', name: 'description', content: this.$t('site_description') }
+      ],
       script: [
         { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js' }
       ],
