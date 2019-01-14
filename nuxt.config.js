@@ -12,7 +12,6 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description },
-      { 'http-equiv': 'cache-control', content: 'max-age=43200' },
     ],
     link: [{
       rel: 'icon',
@@ -42,9 +41,10 @@ module.exports = {
     '@/assets/css/main.css',
     '@/assets/css/themes.light.css',
   ],
+
   render: {
     static: {
-      maxAge: 31536000 // 1 year
+      maxAge: 1000 * 60 * 60 * 24 * 7
     },
     pushAssets: (req, res, publicPath, preloadFiles) => preloadFiles
     .filter(f => f.asType === 'script' && f.file === 'runtime.js')
@@ -89,6 +89,7 @@ module.exports = {
     // Options
     }],
     '@nuxtjs/pwa',
+    '@nuxtjs/font-awesome',
     ['@nuxtjs/component-cache', {
       max: 31536000,
       maxAge: 31536000
