@@ -115,6 +115,7 @@
                     href="https://www.facebook.com/pixari"
                     target="_blank"
                     class="c-social-button t-social-button"
+                    aria-label="Facebook profile"
                   >
                     <i class="fa fa-lg fa-facebook" />
                   </a>
@@ -123,7 +124,9 @@
                   <a
                     href="https://twitter.com/pixari"
                     target="_blank"
-                    class="c-social-button t-social-button">
+                    class="c-social-button t-social-button"
+                    aria-label="Twitter profile"
+                  >
                     <i class="fa  fa-lg  fa-twitter" />
                   </a>
                 </li>
@@ -131,7 +134,9 @@
                   <a
                     href="https://github.com/pixari"
                     target="_blank"
-                    class="c-social-button t-social-button">
+                    class="c-social-button t-social-button"
+                    aria-label="GitHub profile"
+                  >
                     <i class="fa fa-lg fa-github" />
                   </a>
                 </li>
@@ -139,7 +144,9 @@
                   <a
                     href="mailto:raffaele.pizzari@gmail.com"
                     target="_blank"
-                    class="c-social-button t-social-button">
+                    class="c-social-button t-social-button"
+                    aria-label="Personal E-Mail"
+                  >
                     <i class="fa fa-lg fa-envelope" />
                   </a>
                 </li>
