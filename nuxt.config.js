@@ -85,6 +85,7 @@ module.exports = {
       defaultLocale: 'en',
     // Options
     }],
+    'nuxt-webfontloader',
     '@nuxtjs/pwa',
     '@nuxtjs/font-awesome',
     ['@nuxtjs/component-cache', {
@@ -104,6 +105,11 @@ module.exports = {
       cacheableResponse: {statuses: [0, 200]}
     }],
     globPatterns: ['**/*.{js,css}', '**/img/*'],
+  },
+  webfontloader: {
+    google: {
+      families: ['Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic,']
+    }
   },
   /*
   ** Build configuration
