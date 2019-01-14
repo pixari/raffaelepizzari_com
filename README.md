@@ -1,4 +1,4 @@
-# raffaelepizzari.com
+# raffaelepizzari.com [![CircleCI](https://circleci.com/gh/pixari/raffaelepizzari_com/tree/master.png?style=shield)](https://circleci.com/gh/pixari/raffaelepizzari_com)
 
 > My personal website
 
