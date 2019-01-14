@@ -488,6 +488,7 @@ pre,
 
 html {
   font-size: 14px;
+  font-display: swap;
   min-height: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -2132,6 +2133,7 @@ img[height] {
   font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
   letter-spacing: normal;
   line-break: auto;
   line-height: 1.75;
