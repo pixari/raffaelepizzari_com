@@ -12,7 +12,6 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description },
-      { 'http-equiv': 'cache-control', content: 'max-age=31536000' },
     ],
     link: [{
       rel: 'icon',
@@ -44,9 +43,6 @@ module.exports = {
   ],
 
   render: {
-    static: {
-      maxAge: 1000 * 60 * 60 * 24 * 7
-    },
     pushAssets: (req, res, publicPath, preloadFiles) => preloadFiles
     .filter(f => f.asType === 'script' && f.file === 'runtime.js')
     .map(f => `<${publicPath}${f.file}>; rel=preload; as=${f.asType}`),
@@ -96,10 +92,25 @@ module.exports = {
       maxAge: 31536000
     }],
     '@nuxtjs/sitemap',
-
   ],
   manifest: {
     short_name: 'RPizzari',
+  },
+  workbox: {
+    runtimeCaching: [
+        {
+            urlPattern: 'https://fonts.googleapis.com/.*',
+            handler: 'cacheFirst',
+            method: 'GET',
+            strategyOptions: {cacheableResponse: {statuses: [0, 200]}}
+        },
+        {
+            urlPattern: 'https://fonts.gstatic.com/.*',
+            handler: 'cacheFirst',
+            method: 'GET',
+            strategyOptions: {cacheableResponse: {statuses: [0, 200]}}
+        },
+    ]
   },
   /*
   ** Build configuration
