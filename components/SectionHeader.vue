@@ -58,6 +58,7 @@
                       target="_blank"
                       class="c-social-button t-social-button"
                       aria-label="Facebook profile"
+                      rel="noreferrer"
                     >
                       <i class="fa fa-lg fa-facebook" />
                     </a>
@@ -68,6 +69,7 @@
                       target="_blank"
                       class="c-social-button t-social-button"
                       aria-label=">Twitter profile"
+                      rel="noreferrer"
                     >
                       
                       <i class="fa  fa-lg  fa-twitter" />
@@ -79,6 +81,7 @@
                       target="_blank"
                       class="c-social-button t-social-button"
                       aria-label="GitHub profile"
+                      rel="noreferrer"
                     >
                       <i class="fa fa-lg fa-github" />
                     </a>
@@ -89,6 +92,7 @@
                       target="_blank"
                       class="c-social-button t-social-button"
                       aria-label="Personal E-Mail"
+                      rel="noreferrer"
                     >
                       <i class="fa fa-lg fa-envelope" />
                     </a>
