@@ -40,6 +40,7 @@ module.exports = {
   css: [
     '@/assets/css/main.css',
     '@/assets/css/themes.light.css',
+    '@/assets/css/googlefonts.css',
   ],
 
   render: {
@@ -105,11 +106,6 @@ module.exports = {
       cacheableResponse: {statuses: [0, 200]}
     }],
     globPatterns: ['**/*.{js,css}', '**/img/*'],
-  },
-  webfontloader: {
-    google: {
-      families: ['Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic,']
-    }
   },
   /*
   ** Build configuration
