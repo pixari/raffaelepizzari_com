@@ -42,7 +42,14 @@ module.exports = {
     '@/assets/css/main.css',
     '@/assets/css/themes.light.css',
   ],
-
+  render: {
+    static: {
+      maxAge: 31536000 // 1 year
+    },
+    pushAssets: (req, res, publicPath, preloadFiles) => preloadFiles
+    .filter(f => f.asType === 'script' && f.file === 'runtime.js')
+    .map(f => `<${publicPath}${f.file}>; rel=preload; as=${f.asType}`),
+  },
   /*
   ** Plugins to load before mounting the App
   */
@@ -91,11 +98,6 @@ module.exports = {
   ],
   manifest: {
     short_name: 'RPizzari',
-  },
-  render: {
-    pushAssets: (req, res, publicPath, preloadFiles) => preloadFiles
-    .filter(f => f.asType === 'script' && f.file === 'runtime.js')
-    .map(f => `<${publicPath}${f.file}>; rel=preload; as=${f.asType}`)
   },
   /*
   ** Build configuration
