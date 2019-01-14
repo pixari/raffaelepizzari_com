@@ -90,7 +90,7 @@ module.exports = {
 
   ],
   manifest: {
-    short_name: 'RaffaelePizzari',
+    short_name: 'RPizzari',
   }, 
   /*
   ** Build configuration
