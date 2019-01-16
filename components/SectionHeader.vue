@@ -68,7 +68,7 @@
                       href="https://twitter.com/pixari"
                       target="_blank"
                       class="c-social-button t-social-button"
-                      aria-label=">Twitter profile"
+                      aria-label="Twitter profile"
                       rel="noreferrer"
                     >
                       

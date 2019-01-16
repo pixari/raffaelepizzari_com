@@ -6,6 +6,7 @@
     <section-skills />
     <section-experience />
     <section-education />
+    <section-profiles />
     <section-contact />
   </div>
 </template>
@@ -18,6 +19,7 @@ import SectionSkills from '~/components/SectionSkills.vue';
 import SectionExperience from '~/components/SectionExperience.vue';
 import SectionContact from '~/components/SectionContact.vue';
 import SectionEducation from '~/components/SectionEducation.vue';
+import SectionProfiles from '~/components/SectionProfiles.vue';
 
 export default {
   head () {
@@ -40,6 +42,7 @@ export default {
     SectionExperience,
     SectionContact,
     SectionEducation,
+    SectionProfiles,
   }
 }
 </script>
