@@ -9,7 +9,7 @@ I'm almost there, almost.
 
 ## Built With
 [Nuxt.js](https://nuxtjs.org)
-Screenshot 2019-01-16 at 17.21.41.png
+
 ## Build Setup
 ``` bash
 # install dependencies
