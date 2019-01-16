@@ -15,7 +15,7 @@ export default {
   'building_automation_tools_definition': 'Who doesn\'t want to save time and money and to reduce human mistakes during manual building? automate everything that can be automated, then test it.',
   'backend_development_definition': 'At the beginning of my career I worked in PHP and it has been one of my main technologies for many years. Currently it would not be my first choice, but excellent frameworks like Laravel and CakePhp I think are still very competitive.',
   'mobile_definition': 'Mobile first, because "mobile second" or "third" is expensive, more difficult and unnecessarily more complex.',
-  'xbav_description': 'Development of the main web product, a platform for the management of private pensions. Development of the company\'s design library',
+  'xbav_description': 'Development of the main web product (Vue.js), a platform for the management of private pensions. Development of the company\'s design library.',
   'wigeogis_description': 'Design and development of WIGeoWEB components (AngularJS, Node.js), user friendly web interfaces (Bootstrap / AngularJS), configuration of automation tools (Webpack, Bower, Gulp, Bamboo).',
   'safelog_description': 'Development of the main product (C#), the core software of smart automated carts. Installation and configuration of automated carts. Technical support for customers.',
   'egorego_description': 'Co-founder. Managed multiple projects with a team of full-stack developers and web marketing experts from planning to e-commerce / blog / website launch. Design and development of rich websites (PHP, JS, CSS, HTML).',

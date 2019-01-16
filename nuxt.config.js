@@ -86,6 +86,9 @@ module.exports = {
       defaultLocale: 'en',
     // Options
     }],
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-59328929-1'
+    }],
     'nuxt-webfontloader',
     '@nuxtjs/pwa',
     '@nuxtjs/font-awesome',
