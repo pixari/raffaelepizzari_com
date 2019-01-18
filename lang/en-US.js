@@ -58,7 +58,7 @@ export default {
   'Bower': 'Bower',
   'Present': 'Present',
   'SASS': 'SASS',
-  'Munich, GE': 'Munich, GE',
+  'Munich, DE': 'Munich, DE',
   'Rome, IT': 'Rome, IT',
   'Experience': 'Experience',
   'Microsoft': 'Microsoft',

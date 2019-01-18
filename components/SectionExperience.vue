@@ -75,7 +75,7 @@ export default {
           company: 'xbAV AG',
           role: 'Front-End Developer',
           description: this.$t('xbav_description'),
-          location: this.$t('Munich, GE'),
+          location: this.$t('Munich, DE'),
         },
         { 
           from: '10.2015',
@@ -83,7 +83,7 @@ export default {
           company: 'WIGeoGIS GmbH',
           role: 'Full-Stack Developer',
           description: this.$t('wigeogis_description'),
-          location: this.$t('Munich, GE'),
+          location: this.$t('Munich, DE'),
         },
         { 
           from: '10.2013',
@@ -91,7 +91,7 @@ export default {
           company: 'Safelog Gmbh',
           role: 'Software Developer',
           description: this.$t('safelog_description'),
-          location: this.$t('Munich, GE'),
+          location: this.$t('Munich, DE'),
         },
         { 
           from: '06.2007',

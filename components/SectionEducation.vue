@@ -75,7 +75,7 @@ export default {
           company: this.$t('Microsoft'),
           role: this.$t('Microsoft Certified Specialist'),
           description: this.$t('microsoft_description'),
-          location: this.$t('Munich, GE'),
+          location: this.$t('Munich, DE'),
         },
         { 
           from: '10.2015',

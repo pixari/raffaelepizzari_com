@@ -176,7 +176,7 @@ export default {
         lastname: 'Pizzari',
         mobile: '+49 174 9605816',
         email: 'raffaele.pizzari@gmail.com',
-        location: this.$t('Munich, GE'),
+        location: this.$t('Munich, DE'),
         web: 'raffaelepizzari.com',
       },
     }
