@@ -22,6 +22,7 @@ jobs:
           name: Run generate
           command: yarn generate
       
+      - run: npm install ftp glob --save
       - run: node .circleci/deploy.js
 
 
