@@ -1,0 +1,32 @@
+version: 2
+
+defaults: &defaults
+  working_directory: ~/repo
+  docker:
+    - image: circleci/node:8.11.2
+
+jobs:
+
+  deploy:
+    <<: *defaults  
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-
+
+      - run: yarn install
+
+      - run:
+          name: Run generate
+          command: yarn generate
+      
+      - run: node .circleci/deploy.js
+
+
+workflows:
+  version: 2
+  test-deploy:
+    jobs:
+      - deploy
