@@ -25,7 +25,7 @@
                 class="o-content__body"
               >
                 <p>
-                  I’m a highly motivated <strong>Front-End Developer</strong> with over 16 years of experience, expecially <strong>passionate about JavaScript</strong>.
+                  I’m a highly motivated <strong>Front-End Developer</strong> with over 16 years of experience, especially <strong>passionate about JavaScript</strong>.
                 </p>
                 <p>
                   I was <strong>founder and CEO of the EgoRego Internet Company</strong>, based in Rome (Italy), founded in 2007. We've made a reputation for planning successful communication strategies, coding rich Websites, increasing business through social media marketing. I learned how to efficiently manage a project, how to lead a team and deal with customers.
