@@ -39,7 +39,7 @@
                       :href="expertise.link"
                       target="_blank"
                     >
-                      > GitHub Repository
+                      > {{ expertise.linkText }}
                     </a>
                   </p>
                 </div>
@@ -61,36 +61,50 @@ export default {
       exps: [
         { 
           num: '01',
-          title: 'pixari/vue-i18n-extract',
-          desc: 'Manage vue-i18n localization with static analysis',
-          link: 'https://github.com/pixari/vue-i18n-extract',
+          title: 'CodeJourneys.org',
+          desc: `We are a bunch of friendly people who are supporting each other along the way.
+All of us are learners, from newbies to experienced developers.
+Our mission is to inspire everyone to succeed in technology careers. Coding is fun, sharing is caring, support is everything!`,
+          link: 'https://codejourneys.org',
+          linkText: 'Website',
         },
         { 
           num: '02',
-          title: 'pixari/periodic-promise',
-          desc: 'Asynchronous periodic polling with promise',
-          link: 'https://github.com/pixari/periodic-promise',
+          title: 'pixari/vue-i18n-extract',
+          desc: 'Manage vue-i18n localization with static analysis',
+          link: 'https://github.com/pixari/vue-i18n-extract',
+          linkText: 'GitHub Repository',
         },
         { 
           num: '03',
-          title: 'pixari/vue-i18n-extract',
-          desc: `Don't make fun of JavaScript`,
-          link: 'https://github.com/pixari/dmfojs',
+          title: 'pixari/periodic-promise',
+          desc: 'Asynchronous periodic polling with promise',
+          link: 'https://github.com/pixari/periodic-promise',
+          linkText: 'GitHub Repository',
         },
         { 
           num: '04',
-          title: 'pixari/raffaelepizzari_com',
-          desc: `My personal website`,
-          link: 'https://github.com/pixari/raffaelepizzari_com',
+          title: 'pixari/vue-i18n-extract',
+          desc: `Don't make fun of JavaScript`,
+          link: 'https://github.com/pixari/dmfojs',
+          linkText: 'GitHub Repository',
         },
         { 
           num: '05',
-          title: 'pixari/component-library-monorepo',
-          desc: `Monorepo solution for multiple VueJs Apps and a shared component library.`,
-          link: 'https://github.com/pixari/component-library-monorepo',
+          title: 'pixari/raffaelepizzari_com',
+          desc: `My personal website`,
+          link: 'https://github.com/pixari/raffaelepizzari_com',
+          linkText: 'GitHub Repository',
         },
         { 
           num: '06',
+          title: 'pixari/component-library-monorepo',
+          desc: `Monorepo solution for multiple VueJs Apps and a shared component library.`,
+          link: 'https://github.com/pixari/component-library-monorepo',
+          linkText: 'GitHub Repository',
+        },
+        { 
+          num: '07',
           title: 'pixari/LokiJSAdmin',
           desc: `A web interface for LokiJS`,
           link: 'https://github.com/pixari/LokiJSAdmin',
