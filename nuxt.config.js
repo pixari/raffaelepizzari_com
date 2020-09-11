@@ -1,9 +1,5 @@
 
 export default {
-  mode: 'universal',
-  /*
-  ** Headers of the page
-  */
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -20,36 +16,21 @@ export default {
     hostname: 'http://raffaelepizzari.com',
     cacheTime: 1000 * 60 * 15,
     gzip: true,
-    generate: false, // Enable me when using nuxt generate
+    generate: false,
     routes: [
       '/',
     ]
   },
-  /*
-  ** Customize the progress-bar color
-  */
   loading: { color: '#fff' },
-  /*
-  ** Global CSS
-  */
  css: [
     '@/assets/css/main.css',
     '@/assets/css/themes.light.css',
     '@/assets/css/googlefonts.css',
   ],
-  /*
-  ** Plugins to load before mounting the App
-  */
   plugins: [
   ],
-  /*
-  ** Nuxt.js dev-modules
-  */
   buildModules: [
   ],
-  /*
-  ** Nuxt.js modules
-  */
   modules: [
     ['nuxt-i18n', { 
       detectBrowserLanguage: false,
@@ -101,15 +82,8 @@ export default {
     }],
     globPatterns: ['**/*.{js,css}', '**/img/*'],
   },
-  /*
-  ** Build configuration
-  */
   build: {
-    /*
-    ** You can extend webpack config here
-    */
     extend(config, ctx) {
-      // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',

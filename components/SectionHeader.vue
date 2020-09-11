@@ -15,10 +15,10 @@
                     src="~/assets/images/header/raffaele_pizzari_frontend_developer.jpg"
                     alt=""
                   >
-                </div><!-- /c-avatar -->
-              </div><!-- /c-header-avatar -->
-            </div><!-- /c-header__inner-header -->
-          </header><!-- /o-section__header -->
+                </div>
+              </div>
+            </div>
+          </header>
 
           <div class="o-section__content  c-header__content  t-section__content">
             <div class="c-header__inner-content">
@@ -28,33 +28,22 @@
                     <h1 class="c-brand__title  t-title">
                       <span class="c-brand__sizer">
                         <span class="a-header  c-brand__first-word  t-title__first-word">
-                          {{ me.firstname }}
+                          {{ me.firstname }}
                         </span>
                         <span class="a-header  c-brand__second-word  t-title__second-word">
-                          {{ me.lastname }}
+                          {{ me.lastname }}
                         </span>
                       </span>
                     </h1>
                     <h2 class="a-header  c-brand__sub-title  t-sub-title">
                       <span class="c-brand__sizer">
-                        {{ $t('Front-End Developer based in Munich, Germany') }} 
+                        {{ $t('Principal Product Engineer') }} 
                       </span>
                     </h2>
-                  </div><!-- /c-brand -->
-                </div><!-- /c-header__brand -->
+                  </div>
+                </div>
 
                 <ul class="c-header__social-buttons c-social-buttons">
-                  <li class="a-header">
-                    <a 
-                      href="https://www.facebook.com/pixari"
-                      target="_blank"
-                      class="c-social-button t-social-button"
-                      aria-label="Facebook profile"
-                      rel="noreferrer"
-                    >
-                      <i class="fa fa-lg fa-facebook" />
-                    </a>
-                  </li>
                   <li class="a-header">
                     <a
                       href="https://twitter.com/pixari"
@@ -89,8 +78,8 @@
                       <i class="fa fa-lg fa-envelope" />
                     </a>
                   </li>
-                </ul><!-- /c-header__social-buttons -->
-              </div><!-- /c-header__top -->
+                </ul>
+              </div>
 
               <div class="c-header__contact">
                 <hr
@@ -103,22 +92,11 @@
                       <div class="o-content__body">
                         <h4>{{ $t('Location') }}</h4>
                         <address>
-                          {{ $t(me.location) }}
+                          {{ $t(me.location) }}
                         </address>
                       </div>
-                    </div><!-- /o-content -->
-                  </div><!-- /o-grid__col -->
-
-                  <div class="o-grid__col-md-3  o-grid__col-sm-6">
-                    <div class="a-header  o-content">
-                      <div class="o-content__body">
-                        <h4>{{ $t('Phone') }}</h4>
-                        <p>
-                          {{ me.mobile }}
-                        </p>
-                      </div>
-                    </div><!-- /o-content -->
-                  </div><!-- /o-grid__col -->
+                    </div>
+                  </div>
 
                   <div class="o-grid__col-md-3  o-grid__col-sm-6">
                     <div class="a-header  o-content">
@@ -134,10 +112,10 @@
                               {{ me.web }}
                             </span>
                           </p>
-                        </a><!-- /o-link-container -->
+                        </a>
                       </div>
-                    </div><!-- /o-content -->
-                  </div><!-- /o-grid__col -->
+                    </div>
+                  </div>
 
                   <div class="o-grid__col-md-3  o-grid__col-sm-6">
                     <div class="a-header  o-content">
@@ -153,18 +131,18 @@
                               {{ me.email }}
                             </span>
                           </p>
-                        </a><!-- /o-link-container -->
+                        </a>
                       </div>
-                    </div><!-- /o-content -->
-                  </div><!-- /o-grid__col -->
-                </div><!-- /o-grid -->
-              </div><!-- /c-header__contact -->
-            </div><!-- /c-header__inner-content -->
-          </div><!-- /o-section__content -->
-        </div><!-- /o-section__container -->
-      </div><!-- /o-container -->
-    </div><!-- /c-header -->
-  </section><!-- /o-section -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -174,8 +152,7 @@ export default {
       me: {
         firstname: 'Raffaele',
         lastname: 'Pizzari',
-        mobile: '+49 174 9605816',
-        email: 'raffaele.pizzari@gmail.com',
+        email: 'info@raffaelepizzari.com',
         location: this.$t('Munich, DE'),
         web: 'raffaelepizzari.com',
       },

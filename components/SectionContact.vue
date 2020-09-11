@@ -8,13 +8,13 @@
         <header class="o-section__header  t-section__header">
           <div class="o-content">
             <h2 class="o-section__heading">
-              {{ $t('Contact') }}
+              {{ $t('Contact') }}
             </h2>
             <div class="o-content__body  o-section__description">
-              {{ $t('Call me, maybe') }}
+              {{ $t('Call me, maybe') }}
             </div>
           </div>
-        </header><!-- /o-section__header -->
+        </header>
 
         <div class="o-section__content  t-section__content  ">
           <div class="c-footer__contact">
@@ -22,24 +22,13 @@
               <div class="o-grid__col-md-3  o-grid__col-sm-6">
                 <div class="o-content">
                   <div class="o-content__body">
-                    <h4>{{ $t('Location') }}</h4>
+                    <h4>{{ $t('Location') }}</h4>
                     <address>
-                      {{ me.location }}
+                      {{ me.location }}
                     </address>
                   </div>
-                </div><!-- /o-content -->
-              </div><!-- /o-grid__col -->
-
-              <div class="o-grid__col-md-3  o-grid__col-sm-6">
-                <div class="o-content">
-                  <div class="o-content__body">
-                    <h4>{{ $t('Phone') }}</h4>
-                    <p>
-                      {{ me.mobile }}
-                    </p>
-                  </div>
-                </div><!-- /o-content -->
-              </div><!-- /o-grid__col -->
+                </div>
+              </div>
 
               <div class="o-grid__col-md-3  o-grid__col-sm-6">
                 <div class="o-content">
@@ -55,10 +44,10 @@
                           {{ me.web }}
                         </span>
                       </p>
-                    </a><!-- /o-link-container -->
+                    </a>
                   </div>
-                </div><!-- /o-content -->
-              </div><!-- /o-grid__col -->
+                </div>
+              </div>
 
               <div class="o-grid__col-md-3  o-grid__col-sm-6">
                 <div class="o-content">
@@ -68,18 +57,18 @@
                       target="_blank"
                       class="t-link-container"
                     >
-                      <h4>{{ $t('Email') }}</h4>
+                      <h4>{{ $t('Email') }}</h4>
                       <p>
                         <span class="t-link-container__item--blended">
-                          {{ me.email }}
+                          {{ me.email }}
                         </span>
                       </p>
-                    </a><!-- /o-link-container -->
+                    </a>
                   </div>
-                </div><!-- /o-content -->
-              </div><!-- /o-grid__col -->
-            </div><!-- /o-grid -->
-          </div><!-- /c-footer__contact -->
+                </div>
+              </div>
+            </div>
+          </div>
 
           <hr class="c-footer__contact-divider">
 
@@ -91,29 +80,18 @@
                     <h1 class="c-brand__title  t-title">
                       <span class="c-brand__sizer  c-brand__sizer--sm">
                         <span class="a-footer  c-brand__first-word  t-title__first-word">
-                          {{ me.firstname }}
+                          {{ me.firstname }}
                         </span>
                         <span class="a-footer  c-brand__second-word  t-title__second-word">
-                          {{ me.lastname }}
+                          {{ me.lastname }}
                         </span>
                       </span>
                     </h1>
-                  </div><!-- /o-content__body -->
-                </div><!-- /c-brand -->
-              </div><!-- /c-footer__brand -->
+                  </div>
+                </div>
+              </div>
 
               <ul class="c-footer__social-buttons  c-social-buttons  o-content__body">
-                <li class="a-footer">
-                  <a 
-                    href="https://www.facebook.com/pixari"
-                    target="_blank"
-                    class="c-social-button t-social-button"
-                    aria-label="Facebook profile"
-                    rel="noreferrer"
-                  >
-                    <i class="fa fa-lg fa-facebook" />
-                  </a>
-                </li>
                 <li class="a-footer">
                   <a
                     href="https://twitter.com/pixari"
@@ -138,7 +116,7 @@
                 </li>
                 <li class="a-footer">
                   <a
-                    href="mailto:raffaele.pizzari@gmail.com"
+                    href="mailto=info@raffaelepizzari.com"
                     target="_blank"
                     class="c-social-button t-social-button"
                     aria-label="Personal E-Mail"
@@ -147,13 +125,13 @@
                     <i class="fa fa-lg fa-envelope" />
                   </a>
                 </li>
-              </ul><!-- /c-footer__social-buttons -->
-            </div><!-- /c-footer__bottom -->
-          </div><!-- /o-content -->
-        </div><!-- /o-section__content -->
-      </div><!-- /o-section__container -->
-    </div><!-- /o-container -->
-  </section><!-- /o-section -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -163,8 +141,7 @@ export default {
       me: {
         firstname: 'Raffaele',
         lastname: 'Pizzari',
-        mobile: '+49 174 9605816',
-        email: 'raffaele.pizzari@gmail.com',
+        email: 'info@raffaelepizzari.com',
         location: this.$t('Munich, DE'),
         web: 'raffaelepizzari.com',
       },
