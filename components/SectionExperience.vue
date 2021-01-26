@@ -7,23 +7,39 @@
       <div class="o-section__container">
         <header class="o-section__header t-section__header">
           <div class="o-content">
-            <h2 class="o-section__heading">{{ $t('Experience') }}</h2>
-            <div class="o-content__body o-section__description">{{ $t('Yes, I have been around.') }}</div>
+            <h2 class="o-section__heading">
+              {{ $t('Experience') }}
+            </h2>
+            <div class="o-content__body o-section__description">
+              {{ $t('Yes, I have been around.') }}
+            </div>
           </div>
         </header>
         <!-- /o-section__header -->
 
         <div class="o-section__content t-section__content u-pb-0">
           <div class="a-experience-timeline c-timeline t-border-color">
-            <div v-for="(ex, index) in experiences" :key="index" class="c-timeline__item">
+            <div
+              v-for="(ex, index) in experiences"
+              :key="index"
+              class="c-timeline__item"
+            >
               <div class="c-timeline__point t-timeline__point t-primary-bg" />
               <div class="o-content">
                 <div class="o-grid">
                   <div class="o-grid__col-md-5">
-                    <div class="c-work__timeframe">{{ ex.from }} &ndash; {{ ex.to }}</div>
-                    <h3 class="c-work__heading">{{ ex.company }}</h3>
-                    <h4 class="c-work__title">{{ ex.role }}</h4>
-                    <div class="c-work__location">{{ ex.location }}</div>
+                    <div class="c-work__timeframe">
+                      {{ ex.from }} &ndash; {{ ex.to }}
+                    </div>
+                    <h3 class="c-work__heading">
+                      {{ ex.company }}
+                    </h3>
+                    <h4 class="c-work__title">
+                      {{ ex.role }}
+                    </h4>
+                    <div class="c-work__location">
+                      {{ ex.location }}
+                    </div>
                   </div>
                   <div class="o-grid__col-md-7">
                     <p>{{ ex.description }}</p>
@@ -53,8 +69,16 @@ export default {
     return {
       experiences: [
         {
-          from: "05.2020",
+          from: "09.2020",
           to: this.$t("Present"),
+          company: "SinnerSchrader AG, part of Accenture Interactive",
+          role: "Principal Product Engineer",
+          description: this.$t("sinnerschrader_description"),
+          location: this.$t("Munich, DE"),
+        },
+        {
+          from: "05.2020",
+          to: "09.2020",
           company: "SinnerSchrader AG, part of Accenture Interactive",
           role: "Senior Product Engineer",
           description: this.$t("sinnerschrader_description"),
@@ -62,7 +86,7 @@ export default {
         },
         {
           from: "06.2018",
-          to: this.$t("Present"),
+          to: "05.2020",
           company: "xbAV AG",
           role: "Front-End Developer",
           description: this.$t("xbav_description"),
