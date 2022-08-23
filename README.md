@@ -3,9 +3,6 @@
 > My personal website. You can visit it at [raffaelepizzari.com](http://raffaelepizzari.com).´
 
 
-## Built With
-[Nuxt.js](https://nuxtjs.org)
-
 ## Build Setup
 ``` bash
 # install dependencies
