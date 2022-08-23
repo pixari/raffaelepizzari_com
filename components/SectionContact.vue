@@ -37,11 +37,12 @@
                       :href="`http://${me.web}`"
                       target="_blank"
                       class="t-link-container"
+                      :aria-label="$t('A link to this website, my personal website')"
                     >
-                      <h4>{{ $t('Web') }}</h4>
+                      <h4>{{ $t('Web') }}</h4>
                       <p>
                         <span class="t-link-container__item--blended">
-                          {{ me.web }}
+                          {{ me.web }}
                         </span>
                       </p>
                     </a>
@@ -53,8 +54,9 @@
                 <div class="o-content">
                   <div class="o-content__body">
                     <a
-                      :href="`${me.email}`"
+                      :href="`mailto:${me.email}`"
                       target="_blank"
+                      :aria-label="$t('A link to my personal e-mail address')"
                       class="t-link-container"
                     >
                       <h4>{{ $t('Email') }}</h4>
@@ -91,35 +93,47 @@
                 </div>
               </div>
 
-              <ul class="c-footer__social-buttons  c-social-buttons  o-content__body">
-                <li class="a-footer">
+              <ul class="c-header__social-buttons c-social-buttons">
+                <li class="a-header">
                   <a
                     href="https://twitter.com/pixari"
                     target="_blank"
                     class="c-social-button t-social-button"
-                    aria-label="Twitter profile"
+                    :aria-label="$t('Twitter Profile')"
                     rel="noreferrer"
                   >
+                      
                     <i class="fa  fa-lg  fa-twitter" />
                   </a>
                 </li>
-                <li class="a-footer">
+                <li class="a-header">
                   <a
                     href="https://github.com/pixari"
                     target="_blank"
                     class="c-social-button t-social-button"
-                    aria-label="GitHub profile"
+                    :aria-label="$t('Github Profile')"
                     rel="noreferrer"
                   >
                     <i class="fa fa-lg fa-github" />
                   </a>
                 </li>
-                <li class="a-footer">
+                <li class="a-header">
                   <a
-                    href="mailto=info@raffaelepizzari.com"
+                    href="https://www.linkedin.com/in/raffaelepizzari/"
                     target="_blank"
                     class="c-social-button t-social-button"
-                    aria-label="Personal E-Mail"
+                    :aria-label="$t('LinkedIn Profile')"
+                    rel="noreferrer"
+                  >
+                    <i class="fa fa-lg fa-linkedin" />
+                  </a>
+                </li>
+                <li class="a-header">
+                  <a
+                    href="mailto:raffaele.pizzari@gmail.com"
+                    target="_blank"
+                    class="c-social-button t-social-button"
+                    :aria-label="$t('Personal E-Mail')"
                     rel="noreferrer"
                   >
                     <i class="fa fa-lg fa-envelope" />
@@ -141,7 +155,7 @@ export default {
       me: {
         firstname: 'Raffaele',
         lastname: 'Pizzari',
-        email: 'info@raffaelepizzari.com',
+        email: 'hello@raffaelepizzari.com',
         location: this.$t('Munich, DE'),
         web: 'raffaelepizzari.com',
       },

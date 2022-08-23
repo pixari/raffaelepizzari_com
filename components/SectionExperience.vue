@@ -15,7 +15,6 @@
             </div>
           </div>
         </header>
-        <!-- /o-section__header -->
 
         <div class="o-section__content t-section__content u-pb-0">
           <div class="a-experience-timeline c-timeline t-border-color">
@@ -45,21 +44,13 @@
                     <p>{{ ex.description }}</p>
                   </div>
                 </div>
-                <!-- /o-grid -->
               </div>
-              <!-- /o-content -->
             </div>
-            <!-- /c-timeline__item -->
           </div>
-          <!-- /c-timeline -->
         </div>
-        <!-- /o-section__content -->
       </div>
-      <!-- /o-section__container -->
     </div>
-    <!-- /o-container -->
   </section>
-  <!-- /o-section -->
 </template>
 
 
@@ -71,15 +62,15 @@ export default {
         {
           from: "09.2020",
           to: this.$t("Present"),
-          company: "SinnerSchrader AG, part of Accenture Interactive",
+          company: "Accenture Song Build",
           role: "Principal Product Engineer",
-          description: this.$t("sinnerschrader_description"),
+          description: this.$t("accenture_description"),
           location: this.$t("Munich, DE"),
         },
         {
           from: "05.2020",
           to: "09.2020",
-          company: "SinnerSchrader AG, part of Accenture Interactive",
+          company: "Accenture Song Build",
           role: "Senior Product Engineer",
           description: this.$t("sinnerschrader_description"),
           location: this.$t("Munich, DE"),

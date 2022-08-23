@@ -21,7 +21,7 @@
                   href="http://twitter.com/pixari"
                   target="_blank"
                   class="t-link-container"
-                  aria-label="Twitter profile"
+                  :aria-label="$t('Twitter Profile')"
                   rel="noreferrer"
                 >
                   <div class="o-media  o-media--block">
@@ -49,7 +49,7 @@
                   href="https://github.com/pixari/"
                   target="_blank"
                   class="t-link-container"
-                  aria-label="GitHub profile"
+                  :aria-label="$t('Github Profile')"
                   rel="noreferrer"
                 >
                   <div class="o-media  o-media--block">
@@ -70,9 +70,46 @@
                 </a>
               </div>
             </div>
+            
+            <div class="o-grid__col-xl-4  o-grid__col-sm-6">
+              <div class="o-content">
+                <a
+                  href="https://www.linkedin.com/in/raffaelepizzari/"
+                  target="_blank"
+                  class="t-link-container"
+                  :aria-label="$t('LinkedIn Profile')"
+                  rel="noreferrer"
+                >
+                  <div class="o-media  o-media--block">
+                    <div class="o-media__figure">
+                      <div class="c-profile__icon">
+                        <i class="fa fa-lg fa-github" />
+                      </div>
+                    </div>
+                    <div class="o-media__body  o-content__body">
+                      <h3 class="t-link-container__item">
+                        LinkedIn
+                      </h3>
+                      <p>
+                        Where I share some posts.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>            
           </div>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+    }
+  },
+}
+</script>

@@ -13,7 +13,7 @@
                   <img
                     class="c-avatar__img"
                     src="~/assets/images/header/raffaele_pizzari_frontend_developer.jpg"
-                    alt=""
+                    :alt="$t('Raffaele Pizzari profile picture')"
                   >
                 </div>
               </div>
@@ -49,7 +49,7 @@
                       href="https://twitter.com/pixari"
                       target="_blank"
                       class="c-social-button t-social-button"
-                      aria-label="Twitter profile"
+                      :aria-label="$t('Twitter Profile')"
                       rel="noreferrer"
                     >
                       
@@ -61,7 +61,7 @@
                       href="https://github.com/pixari"
                       target="_blank"
                       class="c-social-button t-social-button"
-                      aria-label="GitHub profile"
+                      :aria-label="$t('Github Profile')"
                       rel="noreferrer"
                     >
                       <i class="fa fa-lg fa-github" />
@@ -69,10 +69,21 @@
                   </li>
                   <li class="a-header">
                     <a
+                      href="https://www.linkedin.com/in/raffaelepizzari/"
+                      target="_blank"
+                      class="c-social-button t-social-button"
+                      :aria-label="$t('LinkedIn Profile')"
+                      rel="noreferrer"
+                    >
+                      <i class="fa fa-lg fa-linkedin" />
+                    </a>
+                  </li>
+                  <li class="a-header">
+                    <a
                       href="mailto:raffaele.pizzari@gmail.com"
                       target="_blank"
                       class="c-social-button t-social-button"
-                      aria-label="Personal E-Mail"
+                      :aria-label="$t('Personal E-Mail')"
                       rel="noreferrer"
                     >
                       <i class="fa fa-lg fa-envelope" />
@@ -88,7 +99,7 @@
 
                 <div class="o-grid">
                   <div class="o-grid__col-md-3  o-grid__col-sm-6">
-                    <div class="a-header  o-content">
+                    <div class="a-header o-content">
                       <div class="o-content__body">
                         <h4>{{ $t('Location') }}</h4>
                         <address>
@@ -102,8 +113,9 @@
                     <div class="a-header  o-content">
                       <div class="o-content__body">
                         <a
-                          href="#"
+                          :href="`https:${me.web}`"
                           target="_blank"
+                          :aria-label="$t('A link to this website, my personal website')"
                           class="t-link-container"
                         >
                           <h4>{{ $t('Web') }}</h4>
@@ -121,8 +133,9 @@
                     <div class="a-header  o-content">
                       <div class="o-content__body">
                         <a
-                          href="#"
+                          :href="`mailto:${me.email}`"
                           target="_blank"
+                          :aria-label="$t('A link to my personal e-mail address')"
                           class="t-link-container"
                         >
                           <h4>{{ $t('Email') }}</h4>
@@ -152,7 +165,7 @@ export default {
       me: {
         firstname: 'Raffaele',
         lastname: 'Pizzari',
-        email: 'info@raffaelepizzari.com',
+        email: 'hello@raffaelepizzari.com',
         location: this.$t('Munich, DE'),
         web: 'raffaelepizzari.com',
       },

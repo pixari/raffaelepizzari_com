@@ -2,9 +2,7 @@
   <div class="c-main-container js-main-container">
     <section-header />
     <section-intro />
-    <section-expertise />
     <section-experience />
-    <section-projects />
     <section-education />
     <section-profiles />
     <section-contact />
@@ -14,7 +12,6 @@
 <script>
 import SectionHeader from '~/components/SectionHeader.vue';
 import SectionIntro from '~/components/SectionIntro.vue';
-import SectionProjects from '~/components/SectionProjects.vue';
 import SectionExperience from '~/components/SectionExperience.vue';
 import SectionContact from '~/components/SectionContact.vue';
 import SectionEducation from '~/components/SectionEducation.vue';
