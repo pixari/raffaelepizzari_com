@@ -1,0 +1,15 @@
+phases:
+  install:
+    commands:
+      - npm install -g n
+      - npm update -g npm
+  pre_build:
+    commands:
+      - npm install
+  build:
+    commands:
+      - run: npm ci
+      - run: npm run generate
+artifacts:
+  files:
+    - dist/**/*
