@@ -63,7 +63,7 @@ export default {
     '@nuxtjs/font-awesome',
     '@nuxtjs/sitemap',
     ['@nuxtjs/google-analytics', {
-      id: 'UA-59328929-1'
+      id: 'UA-13290317-2'
     }],
     ['@nuxtjs/component-cache', {
       max: 31536000,
